@@ -1,0 +1,30 @@
+.topics {
+	background: var(--blue-gradient-alura);
+	text-align: center;
+	padding: 1em 0;
+}
+
+.topics__title {
+	color: var(--white-alura);
+	font-weight: 800; 			/* alura: 300. But is better with 600. */
+	margin-botom: 1em;
+}
+
+.topics__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.topics__item {
+	margin: 2em 0.5em;
+}
+
+.topic__link {
+	color: var(--white-alura);
+	padding: 1em;
+	background-color: var(--orange-alura);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;			/* alura: 700. But is better with 500. See topic__title. */
+}

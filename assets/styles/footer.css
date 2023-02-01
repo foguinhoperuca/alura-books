@@ -1,0 +1,8 @@
+hr {
+	margin: 0;
+}
+
+.footercls {
+	background-color: var(--white-alura);
+	padding: 1em;
+}
