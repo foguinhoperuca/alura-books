@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Alura Books</title>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link href="assets/styles/style.css" rel="stylesheet"/>
@@ -25,16 +26,32 @@
 		</label>
 		<ul class="list-menu">
 		  <li class="list-menu__title">Categories</li>
-		  <li class="list-menu__item"><a class="list-menu__link" href="#">Programação</a></li>
-		  <li class="list-menu__item"><a class="list-menu__link" href="#">Front-end</a></li>
-		  <li class="list-menu__item"><a class="list-menu__link" href="#">Inifraestrutura</a></li>
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Programming</a></li>
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Front-End</a></li>
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Infrastructure</a></li>
 		  <li class="list-menu__item"><a class="list-menu__link" href="#">Business</a></li>
 		  <li class="list-menu__item"><a class="list-menu__link" href="#">Design & UX</a></li>
 		</ul>
 		<img class="container__image" alt="Logo Alura Books" src="assets/images/Logo.svg"/>
+		<h1 class="container__title"><b class="container__title--bold">Alura</b>Books</h1>
 	  </div>
+	  <ul class="options">
+		<input id="options-menu" class="options__button" name="" type="checkbox" value=""/>
+		<label for="options-menu">
+		  <li class="options__item">Categories</li>
+		</label>
+		<ul class="list-menu">
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Programming</a></li>
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Frint-End</a></li>
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Infrastructure</a></li>
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Business</a></li>
+		  <li class="list-menu__item"><a class="list-menu__link" href="#">Design & UX</a></li>
+		</ul>
+		<li class="options__item"><a class="options__link" href="#">Favorites</a></li>
+		<li class="options__item"><a class="options__link" href="#">My Shelf</a></li>
+	  </ul>
 	  <div class="container">
-		<a href="#"><img class="container__image" alt="My favorites" src="assets/images/Favoritos.svg"/></a>
+		<a href="#"><img class="container__image container__image-transparent" alt="My favorites" src="assets/images/Favoritos.svg"/></a>
 		<a href="#"><img class="container__image" alt="Shopping cart" src="assets/images/Compras.svg"/></a>
 		<a href="#"><img class="container__image" alt="My profile" src="assets/images/Usuario.svg"/></a>
 	  </div>
@@ -120,20 +137,22 @@
 	  <section class="topics">
 		<h2 class="topics__title">Latest Topics</h2>
 		<ul class="topics__list">
-          <li class="topics__item"><a class="topic__link" href="#">Android</a></li>
-          <li class="topics__item"><a class="topic__link" href="#">Marketing Digital</a></li>
-          <li class="topics__item"><a class="topic__link" href="#">Agile</a></li>
-          <li class="topics__item"><a class="topic__link" href="#">Startup</a></li>
-          <li class="topics__item"><a class="topic__link" href="#">HTML and CSS</a></li>
-          <li class="topics__item"><a class="topic__link" href="#">Python</a></li>
-          <li class="topics__item"><a class="topic__link" href="#">OO</a></li>
-          <li class="topics__item"><a class="topic__link" href="#">Java</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">Android</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">Digital Marketing</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">Agile</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">Startup</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">HTML and CSS</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">Python</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">OO</a></li>
+          <li class="topics__item"><a class="topics__link" href="#">Java</a></li>
 		</ul>
 	  </section>
 
 	  <section class="contact">
-		<h2 class="contact__title">Get Informed!!</h2>
-		<p class="contact__text">Updates of e-books, new books, promtions and many more.</p>
+		<div class="contact__description">
+		  <h2 class="contact__title">Get Informed!!</h2>
+		  <p class="contact__text">Updates of e-books, new books, promotions and many more.</p>
+		</div>
 		<input class="contact__email" name="" type="email" value="" placeholder="Register your e-mail."/>
 	  </section>
 
@@ -141,6 +160,81 @@
 
 	  <footer class="footercls">
 		<h2 class="footercls__title">Alura's Enterprise.</h2>
+		<ul class="list-footercls">
+		  <li class="list-footercls__title">Education</li>
+		  <li class="list-footercls__item">
+			<img alt="Logo Casa do Código" src="assets/images/CasaDoCodigo.svg" />
+			<a class="list-footer__link" href="#">Casa do Código</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo Caelum" src="assets/images/Caelum.svg" />
+			<a class="list-footer__link" href="#">Caelum</a>
+		  </li>
+		</ul>
+
+		<ul class="list-footercls">
+		  <li class="list-footercls__title">Online Education</li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Alura" src="assets/images/Alura.svg"/>
+			<a class="list-footercls__link" href="#">Alura</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Alura for Enterprise" src="assets/images/AluraEmpresas.svg"/>
+			<a class="list-footercls__link" href="#">Alura for Enterprises</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Alura LATAM" src="assets/images/AluraLATAM.svg"/>
+			<a class="list-footercls__link" href="#">Alura LATAM</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Alura START" src="assets/images/AluraStart.svg"/>
+			<a class="list-footercls__link" href="#">Alura START</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Music Dot" src="assets/images/MusicDot.svg"/>
+			<a class="list-footercls__link" href="#">Music Dot</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Alura Lingua" src="assets/images/AluraLingua.svg"/>
+			<a class="list-footercls__link" href="#">Alura Lingua</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of PM3" src="assets/images/PM3.svg"/>
+			<a class="list-footercls__link" href="#">PM3</a>
+		  </li>
+		</ul>
+
+		<ul class="list-footercls">
+		  <li class="list-footercls__title">Community</li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Hipsters ponto Tech" src="assets/images/HipstersTech.svg"/>
+			<a class="list-footercls__link" href="#">Hipsters ponto Tech</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Scuba Dev" src="assets/images/ScubaDev.svg"/>
+			<a class="list-footercls__link" href="#">Scuba Dev</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Layers ponto Tech" src="assets/images/LayersTech.svg"/>
+			<a class="list-footercls__link" href="#">Layers ponto Tech</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Like a Boss" src="assets/images/LikeABoss.svg"/>
+			<a class="list-footercls__link" href="#">Like a Boss</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Carreira Sem Fronteira" src="assets/images/CarreiraSemFronteira.svg"/>
+			<a class="list-footercls__link" href="#">Carreiras Sem Fronteiras</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of Hipsters ponto Jobs" src="assets/images/HipstersJobs.svg"/>
+			<a class="list-footercls__link" href="#">Hipsters ponto Jobs</a>
+		  </li>
+		  <li class="list-footercls__item">
+			<img alt="Logo of GUJ" src="assets/images/GUJ.svg"/>
+			<a class="list-footercls__link" href="#">GUJ</a>
+		  </li>
+		</ul>
 	  </footer>
 
 	  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

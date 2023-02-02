@@ -20,11 +20,21 @@
 	margin: 2em 0.5em;
 }
 
-.topic__link {
+.topics__link {
 	color: var(--white-alura);
 	padding: 1em;
 	background-color: var(--orange-alura);
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: 500;			/* alura: 700. But is better with 500. See topic__title. */
+}
+
+@media screen and (min-width: 1024px) {
+	.topics__title {
+		font-size: 24px;
+	}
+
+	.topics__link {
+		font-size: 24px;
+	}
 }

@@ -10,8 +10,12 @@
 	--white-alura: #FFFFFF;
 	--orange-alura: #EB9B00;
 	--blue-gradient-alura: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-	--main-font: "Poppins";
 	--blue-alura: #002F52;
+	--main-font: "Poppins";
+	--secondary-font: "Josefin Sans";
+	--black-alura: #000000;
+	--grey-alura: #474646;
+	--grey-light-alura: #858585;
 }
 
 body {
