@@ -7,7 +7,7 @@
 .topics__title {
 	color: var(--white-alura);
 	font-weight: 800; 			/* alura: 300. But is better with 600. */
-	margin-botom: 1em;
+	margin-bottom: 1em;
 }
 
 .topics__list {
@@ -29,6 +29,11 @@
 	font-weight: 500;			/* alura: 700. But is better with 500. See topic__title. */
 }
 
+.topics__link:hover {
+	color: var(--orange-alura);
+	background-color: var(--white-alura);
+}
+
 @media screen and (min-width: 1024px) {
 	.topics__title {
 		font-size: 24px;
@@ -36,5 +41,11 @@
 
 	.topics__link {
 		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 1728px) {
+	.topics {
+		padding: 3em 30vw;
 	}
 }

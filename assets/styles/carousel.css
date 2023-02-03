@@ -57,6 +57,10 @@
 	font-size: 14px;
 }
 
+.description img {
+	margin: 0.5em;
+}
+
 .buttons {
 	display: flex;
 }
@@ -68,13 +72,18 @@
 .buttons__archor {
 	background-color: var(--orange-alura);
 	padding: 1em 2.2em;
-	color: var(--white);
+	color: var(--white-alura);
 	font-weight: 700;
 	text-decoration: none;
 }
 
-.description img {
-	margin: 0.5em;
+.buttons__archor:hover {
+	color: var(--white-alura);
+	background-color: var(--blue-alura);
+}
+
+.buttons__archor:active {
+	background-color: var(--black-alura);
 }
 
 @media screen and (min-width: 1024px) {
@@ -98,5 +107,38 @@
 	.card {
 		width: 40%;
 		margin: 2em auto;
+	}
+}
+
+@media screen and (min-width: 1728px) {
+	.carousel__container {
+		display: flex;
+		margin: 0 20vw 3em 20vw;
+		align-items: center;
+	}
+
+	.swiper {
+		width: 50%;
+	}
+	
+	.swiper-pagination {
+		margin: 1em 0;
+	}
+
+	.description {
+		margin-right: 2em;
+	}
+
+	.description__title {
+		font-size: 32px;
+	}
+
+	.description__text {
+		font-size: 16px;
+	}
+
+	.card {
+		width: 60%;
+		margin-left: 3em;
 	}
 }

@@ -6,7 +6,7 @@
 	position: relative;
 }
 
-.headercls__menu-hambuguer{
+.headercls__menu-hamburguer{
 	width: 24px; 				/* FIGMA: 36px */
 	height: 24px;
 	display: inline-block;
@@ -32,8 +32,20 @@
 	display: none;
 }
 
+.container__text {
+	display: none;
+}
+
 .container__button:checked ~ .list-menu {
 	display: block;
+}
+
+.container__button:checked ~ .container__label > .headercls__menu-hamburguer {
+	background-image: url('../images/MenuAberto.svg')
+}
+
+.container__button:checked ~ .container__label {
+	background: var(--blue-gradient-alura);
 }
 
 .list-menu {
@@ -90,8 +102,9 @@
 	}
 
 	.options__item {
-		padding: 0 1em;
-		text-transformation: uppercase;
+		/* FIXME this class was updated?! padding: 0 1em; */
+		padding: 2em 1em;
+		text-transform: uppercase;
 	}
 
 	.options__link {
@@ -102,12 +115,49 @@
 	.options__button {
 		display: none;
 	}
-	
+
 	.options__button:checked ~ .list-menu {
 		display: block;
 		width: auto;
 	}
 
-	.headercls__menu-hambuguer {
+	.options__button:checked ~ .options__label > .options__item {
+		background: var(--blue-gradient-alura);
+		color: var(--white-alura);
+
+	}
+
+	.headercls__menu-hamburguer {
 		display: none;
 	}
+
+	.list-menu__item:hover {
+		background: var(--blue-gradient-alura);
+	}
+
+	.list-menu__item:hover > .list-menu__link {
+		-webkit-text-fill-color: var(--white-alura);
+		text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 1728px) {
+	.container__link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: var(--black-alura);
+	}
+
+	.headercls {
+		padding: 0 2em;
+	}
+
+	.options {
+		margin-right: auto;
+	}
+
+	.container__text {
+		display: block;
+	}
+}

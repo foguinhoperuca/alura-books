@@ -11,6 +11,9 @@ hr {
 	display: none;
 }
 
+.list-footercls__link:hover {
+	color: var(--orange-alura);
+}
 
 @media screen and (min-width: 1024px) {
 	.footercls {
@@ -41,5 +44,17 @@ hr {
 
 	.footercls__title {
 		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 1728px) {
+	.footercls {
+		padding: 3em 0;
+	}
+
+	.list-footercls {
+		border-left: 1px solid var(--grey-light-alura);
+		padding-left: 1em;
+		
 	}
 }
